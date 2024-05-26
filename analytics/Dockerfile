@@ -1,4 +1,4 @@
-FROM python:3.10-slim-buster as build
+FROM --platform=linux/amd64 public.ecr.aws/docker/library/python:3.10-slim-buster as build
 
 WORKDIR /app
 # Copy the requirements file into the container at /app
