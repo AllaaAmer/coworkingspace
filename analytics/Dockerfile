@@ -6,7 +6,7 @@ COPY requirements.txt /app/
 
 # Install any needed packages specified in requirements.txt
 RUN python -m pip install --upgrade pip setuptools wheel
-RUN python -m pip install -r requirements.txtcd
+RUN python -m pip install -r requirements.txt
 
 COPY . /app/
 
