@@ -18,6 +18,7 @@ def health_check():
     return "ok"
 
 
+
 @app.route("/readiness_check")
 def readiness_check():
     try:
