@@ -23,10 +23,10 @@ spec:
               value: mypassword
           ports:
             - containerPort: 5432
-          volumeMounts:
-            - mountPath: /var/lib/postgresql/data
-              name: postgresql-storage
-      volumes:
-        - name: postgresql-storage
-          persistentVolumeClaim:
-            claimName: postgresql-pvc
+         # volumeMounts:
+         #  - mountPath: /var/lib/postgresql/data
+         #   name: postgresql-storage
+     # volumes:
+     #   - name: postgresql-storage
+     #     persistentVolumeClaim:
+     #      claimName: postgresql-pvc
