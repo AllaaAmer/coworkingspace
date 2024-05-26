@@ -1,4 +1,4 @@
-FROM python:3.10-slim-buster
+FROM python:3.10-slim-buster as build
 
 WORKDIR /app
 # Copy the requirements file into the container at /app
